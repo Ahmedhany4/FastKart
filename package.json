@@ -27,12 +27,29 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:ci": "eslint . --quiet"
   },
   "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "overrides": [
+      {
+        "files": ["*.js", "*.jsx"],
+        "rules": {
+          "no-unused-vars": "warn"
+        }
+      }
     ]
   },
   "browserslist": {
