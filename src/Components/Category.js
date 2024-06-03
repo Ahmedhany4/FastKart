@@ -10,11 +10,11 @@ function Category({category }) {
 
       <div className="item">
         <div className="image">
-          <img src={category .image} alt={category .title} />
+          <img src={category.image} alt={category.title} />
         </div>
         <div className='content'>
-          <p>{category .p}</p>
-          <h2>{category .title}</h2>
+          <p>{category.p}</p>
+          <h2>{category.title}</h2>
           <a className='btn '> Shop Now <FontAwesomeIcon icon={solidIcons.faAngleRight} /></a>
           
         </div>

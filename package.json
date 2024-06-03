@@ -23,6 +23,9 @@
     "sweetalert2-react-content": "^5.0.7",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7"  
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -43,11 +46,15 @@
       "eslint:recommended",
       "plugin:react/recommended"
     ],
+    "rules": {
+      
+    },
     "overrides": [
       {
         "files": ["*.js", "*.jsx"],
         "rules": {
           "no-unused-vars": "warn"
+          
         }
       }
     ]
