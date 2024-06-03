@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './Components/Navbar'
+
 import { Outlet, Route, Routes } from 'react-router-dom';
 import DashBoard from './Pages/dashboard/DashBoard';
 import Index from './Pages/Index';
@@ -9,7 +9,7 @@ import CheckoutForm from './Pages/CheckoutForm';
 import ProductDetails from './Pages/ProductDetails';
 import Wishlist from './Pages/Wishlist';
 
-
+import React from 'react';
 
 function App() {
   return (
